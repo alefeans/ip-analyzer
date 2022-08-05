@@ -102,3 +102,26 @@ dist
 
 # TernJS port file
 .tern-port
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build/Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history
+
+# Secrets
+.env
