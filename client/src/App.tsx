@@ -23,7 +23,7 @@ export default function App() {
         />
         <Heading
           mb='8'
-          size='2xl'
+          size='4xl'
           fontWeight='extrabold'
           bgGradient='linear(to-r, teal.700, teal.500, teal.400)'
           bgClip='text'
