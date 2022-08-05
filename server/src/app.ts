@@ -17,8 +17,4 @@ app.use(
   })
 )
 
-const PORT = process.env.PORT || 8000
-
-app.listen(PORT, () => {
-  console.log(`Running a GraphQL API server at http://localhost:${PORT}/graphql`)
-})
+export default app

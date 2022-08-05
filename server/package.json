@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/server.ts",
+  "main": "index.ts",
   "engines": {
     "node": "16.x"
   },
@@ -15,7 +15,7 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules index.ts",
     "test": "jest",
     "build": "tsc",
     "start": "node dist/server.js"
