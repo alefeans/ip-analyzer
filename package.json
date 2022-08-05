@@ -6,5 +6,11 @@
   "files": [
     "./client/*",
     "./server/*"
-  ]
+  ],
+  "scripts": {
+    "dev:client": "cd client && yarn dev",
+    "dev:server": "cd server && yarn dev",
+    "install:client": "cd client && yarn",
+    "install:server": "cd server && yarn"
+  }
 }
