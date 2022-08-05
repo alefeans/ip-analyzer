@@ -5,15 +5,14 @@ export const schema = buildSchema(`
     ip: String!,
     ipVersion: Int!,
     isPublic: Boolean!,
-	  country: String!,
-	  reports: Int!,
-	  isp: String!,
-	  usageType: String!,
-	  domain: String!,
-	  riskScore: Int!,
+    country: String!,
+    reports: Int!,
+    isp: String!,
+    usageType: String!,
+    domain: String!,
+    riskScore: Int!,
   }
 
   type Query {
     score(ip: String!): Score
-  }
-`)
+  }`)
