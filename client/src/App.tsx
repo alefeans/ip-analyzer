@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
 import { Text, Heading, VStack, IconButton, useColorMode } from '@chakra-ui/react'
-import IPCheckInput from './components/IPCheckInput';
-import ParticlesBackground from './components/ParticlesBackground';
+import IPCheckScoreInput from './components/IPCheckScoreInput'
+import ParticlesBackground from './components/ParticlesBackground'
 
 export default function App() {
 
@@ -30,7 +30,7 @@ export default function App() {
         >
           IP Analyzer</Heading>
         <Text fontSize='lg'>Check the risk score of an IP Address</Text>
-        <IPCheckInput />
+        <IPCheckScoreInput />
       </VStack>
     </>
   )
