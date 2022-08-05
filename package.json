@@ -1,0 +1,10 @@
+{
+  "name": "ip-analyzer",
+  "version": "1.0.0",
+  "author": "alefeans <alefeans2@hotmail.com>",
+  "license": "MIT",
+  "files": [
+    "./client/*",
+    "./server/*"
+  ]
+}
