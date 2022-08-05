@@ -1,6 +1,5 @@
 import { GraphQLClient } from 'graphql-request'
 
-// TODO make url dynamic
-const url = 'http://localhost:8000/graphql';
+const url = import.meta.env.VITE_IP_ANALYZER_ENDPOINT
 
 export const IPAnalyzerClient = new GraphQLClient(url, { timeout: 2000 })
