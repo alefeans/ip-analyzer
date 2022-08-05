@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { ColorMode } from '@chakra-ui/react';
-import Particles from 'react-tsparticles';
+import React, { useEffect, useState } from 'react'
+import { ColorMode } from '@chakra-ui/react'
+import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { Engine } from 'tsparticles-engine';
+import { Engine } from 'tsparticles-engine'
 
 type ParticlesBackgroundProps = {
   colorMode: ColorMode
@@ -15,10 +15,10 @@ const particlesColorsMapping: Record<ColorMode, ParticleColors> = {
   dark: '#ffffff'
 }
 
-function ParticlesBackground({ colorMode }: ParticlesBackgroundProps) {
+export default function ParticlesBackground({ colorMode }: ParticlesBackgroundProps) {
 
   const particlesInit = async (main: Engine) => {
-    await loadFull(main);
+    await loadFull(main)
   }
 
   const [color, setColor] = useState<ParticleColors>(particlesColorsMapping[colorMode])
@@ -90,5 +90,3 @@ function ParticlesBackground({ colorMode }: ParticlesBackgroundProps) {
     />
   )
 }
-
-export default ParticlesBackground
