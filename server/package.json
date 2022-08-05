@@ -1,8 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "src/server.ts",
+  "engines": {
+    "node": "16.x"
+  },
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
@@ -13,7 +16,9 @@
   },
   "scripts": {
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
