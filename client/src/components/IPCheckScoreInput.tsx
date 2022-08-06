@@ -62,7 +62,7 @@ export default function IPCheckScoreInput() {
 		}
 
 		try {
-			toast({ title: 'Checking IP Address', status: 'loading' })
+			toast({ title: 'Checking IP Address', status: 'loading', duration: 5000 })
 			const { score } = await IPAnalyzerClient.request<IPCheckScoreResponse>(IP_CHECK_SCORE_QUERY, { ip: input })
 			setPreviousInput(input)
 			setScore(score)
