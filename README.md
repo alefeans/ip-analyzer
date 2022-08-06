@@ -1,29 +1,39 @@
 # IP Analyzer
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/alefeans/ip-analyzer?style=for-the-badge)
-![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=dark)
-![Node.JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=dark)
 ![Github open issues](https://img.shields.io/github/issues/alefeans/ip-analyzer?style=for-the-badge)
 
 ## Overview
 
-`IP Analyzer` was created to simplify the access of information about an IP address. It uses some famous IP scanners (right now, it only uses [AbuseIPDB](https://www.abuseipdb.com/)), to unify all the information available about an IP into one simplified GraphQL schema.
+`IP Analyzer` was created to simplify the access of information about public IP addresses. It uses some famous IP scanners (right now only [AbuseIPDB](https://www.abuseipdb.com/) is being used), to unify all the information available about IP addresses into one simplified GraphQL schema.
 
 Access [here](https://ip-analyzer.vercel.app/) to play with the `IP Analyzer` frontend or interact directly with the GraphQL API [here](https://ip-analyzer-server.vercel.app/graphql).
 
+## Stack
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skills.thijs.gg/icons?i=ts,react,vite,express,graphql,jest,vercel&theme=dark" />
+  </a>
+</p>
+
 ## Usage
 
-### Installing Dependencies
+### Installing the Dependencies
 
-You can use `npm` or `yarn`:
+The following global dependencies are required:
+
+- Node.JS 16.x
+- Yarn or NPM
+
+To install the local dependencies:
 
 ```sh
 yarn install:client
 yarn install:server
 ```
 
-### Development
+### Start 
 
 To start the services on development mode:
 
