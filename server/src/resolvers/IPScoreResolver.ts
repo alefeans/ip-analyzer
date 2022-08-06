@@ -1,5 +1,6 @@
-import AbuseIPDBClient from "../services/AbuseIPDBClient"
+import { isIP } from 'net'
 import is_ip_private from 'private-ip'
+import AbuseIPDBClient from "../services/AbuseIPDBClient"
 
 type IP = string
 
@@ -14,13 +15,13 @@ type AbuseIPDBCheckResponse = {
     abuseConfidenceScore: number,
     countryCode: string,
     countryName?: string,
-    usageType: string,
+    usageType: string | null,
     isp: string,
     domain: string,
     hostnames: string[],
     totalReports: number,
     numDistinctUsers: number,
-    lastReportedAt: string
+    lastReportedAt: string | null
   }
 }
 
@@ -38,6 +39,10 @@ type IPScore = {
 
 export const score = async ({ ip }: { ip: IP }): Promise<IPScore> => {
 
+  if (!isIP(ip)) {
+    throw new Error('Invalid IP Address')
+  }
+
   if (is_ip_private(ip)) {
     throw new Error('Private IP Address')
   }
@@ -52,7 +57,7 @@ export const score = async ({ ip }: { ip: IP }): Promise<IPScore> => {
     country: data.countryName ? data.countryName : data.countryCode,
     reports: data.totalReports,
     isp: data.isp,
-    usageType: data.usageType,
+    usageType: data.usageType ? data.usageType : 'Unkown',
     domain: data.domain,
     riskScore: data.abuseConfidenceScore
   }
