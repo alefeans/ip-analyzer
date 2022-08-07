@@ -12,7 +12,7 @@ const checkIPScoreResponse = ({ data }): IPScore => {
     country: data.countryName ? data.countryName : data.countryCode,
     reports: data.totalReports,
     isp: data.isp,
-    usageType: data.usageType ? data.usageType : 'Unkown',
+    usageType: data.usageType ? data.usageType : 'Unknown',
     domain: data.domain,
     riskScore: data.abuseConfidenceScore
   }
