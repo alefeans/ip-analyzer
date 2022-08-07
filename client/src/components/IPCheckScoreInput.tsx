@@ -1,6 +1,6 @@
 import React, { FormEvent, useState } from 'react'
 import { Button, HStack, Input, useToast } from '@chakra-ui/react'
-import { gql } from "graphql-request"
+import { gql } from 'graphql-request'
 import { isIP } from 'is-ip'
 import is_ip_private from 'private-ip'
 import IPCheckScoreTable from './IPCheckScoreTable'

@@ -29,7 +29,7 @@ export default function ParticlesBackground({ colorMode }: ParticlesBackgroundPr
 
   return (
     <Particles
-      id="tsparticles"
+      id='tsparticles'
       init={particlesInit}
       options={{
         fpsLimit: 120,
@@ -59,10 +59,10 @@ export default function ParticlesBackground({ colorMode }: ParticlesBackgroundPr
             enable: true,
           },
           move: {
-            direction: "none",
+            direction: 'none',
             enable: true,
             outModes: {
-              default: "bounce",
+              default: 'bounce',
             },
             random: true,
             speed: 0.5,
@@ -79,7 +79,7 @@ export default function ParticlesBackground({ colorMode }: ParticlesBackgroundPr
             value: 0.5,
           },
           shape: {
-            type: "square",
+            type: 'square',
           },
           size: {
             value: { min: 1, max: 5 },

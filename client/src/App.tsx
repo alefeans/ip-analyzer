@@ -6,7 +6,7 @@ import ParticlesBackground from './components/ParticlesBackground'
 
 export default function App() {
 
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <>
