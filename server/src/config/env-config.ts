@@ -1,19 +1,22 @@
-import path from "path"
-import dotenv from "dotenv"
+import path from 'path'
+import dotenv from 'dotenv'
 
-dotenv.config({ path: path.resolve(__dirname, "../../.env") })
+dotenv.config({ path: path.resolve(__dirname, '../../.env') })
 
 type ENV = {
-  ABUSE_IP_DB_KEY: string | undefined
+  ABUSE_IP_DB_KEY: string | undefined,
+  PORT: string | undefined,
 }
 
 type Config = {
-  ABUSE_IP_DB_KEY: string
+  ABUSE_IP_DB_KEY: string,
+  PORT: string | undefined,
 }
 
 const getEnv = (): ENV => {
   return {
     ABUSE_IP_DB_KEY: process.env.ABUSE_IP_DB_KEY ? process.env.ABUSE_IP_DB_KEY : undefined,
+    PORT: process.env.PORT ? process.env.PORT : '8000',
   }
 }
 
