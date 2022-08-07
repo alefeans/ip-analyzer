@@ -12,7 +12,7 @@ export const checkIPScoreResponse: CheckIPScoreResponse = ({ data }) => {
     reports: data.totalReports,
     isp: data.isp,
     usageType: data.usageType ? data.usageType : 'Unknown',
-    domain: data.domain,
+    domain: data.domain ? data.domain : 'Unknown',
     riskScore: data.abuseConfidenceScore
   }
 }

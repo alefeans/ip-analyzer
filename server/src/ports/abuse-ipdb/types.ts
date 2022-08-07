@@ -9,7 +9,7 @@ export type AbuseIPDBCheckAPIResponse = {
     countryName?: string,
     usageType: string | null,
     isp: string,
-    domain: string,
+    domain: string | null,
     hostnames: string[],
     totalReports: number,
     numDistinctUsers: number,
