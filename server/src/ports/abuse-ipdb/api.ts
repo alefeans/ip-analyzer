@@ -1,5 +1,5 @@
 import { AbuseIPDBClient as client } from './client'
-import { CheckIPScore } from '../adapters/ip-scanner/types'
+import { CheckIPScore } from '../../adapters/ip-scanner/types'
 
 export type AbuseIPDBCheckAPIResponse = {
   data: {

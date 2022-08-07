@@ -1,7 +1,7 @@
 import { pipe } from 'fp-ts/function'
 import * as TE from 'fp-ts/TaskEither'
-import { IPScoreInput, IPScore } from '../../../core/types/ip-score'
-import * as core from '../../../core/use-cases/check-ip-score'
+import { IPScoreInput, IPScore } from '../../core/types/ip-score'
+import * as core from '../../core/use-cases/check-ip-score'
 import * as api from '../ip-scanner/check-ip-score'
 
 const checkIPScoreResponse = ({ data }): IPScore => {

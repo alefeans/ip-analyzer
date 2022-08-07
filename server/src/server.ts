@@ -1,1 +1,1 @@
-import './ports/adapters/http'
+import './adapters/http'

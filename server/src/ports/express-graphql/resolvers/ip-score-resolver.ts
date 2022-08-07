@@ -1,5 +1,5 @@
 import * as E from 'fp-ts/Either'
-import { checkIPScore } from '../../adapters/use-cases/check-ip-score'
+import { checkIPScore } from '../../../adapters/use-cases/check-ip-score'
 
 export const score = async (request) => {
   const response = await checkIPScore(request)()
