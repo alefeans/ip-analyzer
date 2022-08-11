@@ -1,1 +1,3 @@
-import './adapters/http'
+import { server } from './adapters/http'
+
+server.start()

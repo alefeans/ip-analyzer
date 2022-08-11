@@ -1,3 +1,2 @@
-import { start } from '../../ports/express-graphql'
-
-start()
+import * as httpServer from '../../ports/express-graphql'
+export { httpServer as server }
