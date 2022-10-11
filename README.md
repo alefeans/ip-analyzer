@@ -13,7 +13,7 @@ Access [here](https://ip-analyzer.vercel.app/) to play with the `IP Analyzer` fr
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skills.thijs.gg/icons?i=ts,react,vite,express,graphql,jest,vercel&theme=dark" />
+    <img src="https://skills.thijs.gg/icons?i=ts,react,vite,express,graphql,vercel&theme=dark" />
   </a>
 </p>
 
