@@ -5,12 +5,12 @@ import { FaSun, FaMoon, FaQuestion } from 'react-icons/fa'
 import { IconButton, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react'
 import AboutDrawer from './AboutDrawer'
 
-type CustomMenuProps = {
+type MainMenuProps = {
   colorMode: ColorMode,
   toggleColorMode: () => void
 }
 
-export default function CustomMenu({ colorMode, toggleColorMode }: CustomMenuProps) {
+export default function MainMenu({ colorMode, toggleColorMode }: MainMenuProps) {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
