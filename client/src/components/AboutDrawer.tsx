@@ -1,5 +1,5 @@
 import React from 'react'
-import { Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton } from '@chakra-ui/react'
+import { Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, Link } from '@chakra-ui/react'
 
 type AboutDrawerProps = {
   isOpen: boolean,
@@ -18,13 +18,11 @@ export default function AboutDrawer({ isOpen, onClose }: AboutDrawerProps) {
         <DrawerHeader>About</DrawerHeader>
         <DrawerBody>
           IP Analyzer was created to simplify the access of information about public IP addresses.
-          It uses some famous IP scanners like <a href='https://www.abuseipdb.com/'><u>AbuseIPDB</u></a>,
+          It uses some famous IP scanners like <Link isExternal={true} href='https://www.abuseipdb.com/'><u>AbuseIPDB</u></Link>,
           to unify all the information available about IP addresses
-          into one simplified <a href='https://ip-analyzer-server.vercel.app/graphql'><u>GraphQL schema</u></a>.
-          <br/>
-          <br/>
-          
-          Check the source code <a href='https://github.com/alefeans/ip-analyzer'><u>here</u></a>.
+          into one simplified <Link isExternal={true} href='https://ip-analyzer-server.vercel.app/graphql'><u>GraphQL schema</u></Link>.
+          <br/><br/>
+          Check the project on <Link isExternal={true} href='https://github.com/alefeans/ip-analyzer'><u>Github</u></Link> for more information.
         </DrawerBody>
       </DrawerContent>
     </Drawer>
