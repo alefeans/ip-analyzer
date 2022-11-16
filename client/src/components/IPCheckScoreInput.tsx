@@ -26,23 +26,25 @@ type IPCheckScoreResponse = {
 	score: IPCheckScore
 }
 
+const initialScore: IPCheckScore = {
+	ip: '',
+	ipVersion: 4,
+	isPublic: false,
+	country: '',
+	reports: 0,
+	isp: '',
+	usageType: '',
+	domain: '',
+	riskScore: 0
+}
+
 export default function IPCheckScoreInput() {
 
 	const toast = useToast({ duration: 2000, isClosable: true })
 	const [input, setInput] = useState<string>('')
 	const [previousInput, setPreviousInput] = useState<string>('')
 	const [isOpen, setIsOpen] = useState<boolean>(false)
-	const [score, setScore] = useState<IPCheckScore>({
-		ip: '',
-		ipVersion: 4,
-		isPublic: false,
-		country: '',
-		reports: 0,
-		isp: '',
-		usageType: '',
-		domain: '',
-		riskScore: 0
-	})
+	const [score, setScore] = useState<IPCheckScore>(initialScore)
 
 	async function handleSubmitIP(e: FormEvent<HTMLFormElement>) {
 		e.preventDefault()
@@ -81,8 +83,7 @@ export default function IPCheckScoreInput() {
 					<Input
 						placeholder='Public IPV4 or IPV6'
 						value={input}
-						onChange={e => setInput(e.target.value)}
-					/>
+						onChange={e => setInput(e.target.value)}/>
 					<Button colorScheme='teal' px='4' type='submit'>
 						Check
 					</Button>
