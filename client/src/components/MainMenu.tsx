@@ -1,8 +1,7 @@
 import React from 'react'
-import { ColorMode } from '@chakra-ui/react'
 import { FiMenu } from 'react-icons/fi'
-import { FaSun, FaMoon, FaQuestion } from 'react-icons/fa'
-import { IconButton, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react'
+import { FaSun, FaMoon, FaQuestion, FaGithub } from 'react-icons/fa'
+import { IconButton, ColorMode, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react'
 import AboutDrawer from './AboutDrawer'
 
 type MainMenuProps = {
@@ -35,6 +34,12 @@ export default function MainMenu({ colorMode, toggleColorMode }: MainMenuProps) 
             aria-label='About this page'
             onClick={onOpen}>
             About
+          </MenuItem>
+          <MenuItem
+            icon={<FaGithub />}
+            aria-label='Github source code'
+            onClick={() => window.open('https://github.com/alefeans/ip-analyzer')}>
+            Source
           </MenuItem>
         </MenuList>
       </Menu>
