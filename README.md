@@ -47,8 +47,7 @@ yarn dev:server
 To run the automated tests:
 
 ```sh
-yarn test:client
-yarn test:server
+yarn test
 ```
 
 ## Contributing
